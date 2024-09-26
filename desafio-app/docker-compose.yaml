@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  desafio-experts:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: desafio-experts
+    ports:
+      - "8081:80"
+    restart: always
+    user: "nginx"
+    environment:
+      - NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx

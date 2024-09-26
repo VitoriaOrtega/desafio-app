@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: desafio-app-config
+data:
+  index.html: |-
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Bem vindo(a)!</title>
+    </head>
+    <body>
+      <h1>Bem vindo(a) a minha pagina!</h1>
+      <p>Totalmente configurada via Kubernetes</p>
+      <p>Linkedin: https://br.linkedin.com/in/vit%C3%B3ria-ortega-3332b5244?original_referer=https%3A%2F%2Fwww.google.com%2F</p>
+    </body>
+    </html>
