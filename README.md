@@ -20,8 +20,15 @@ Esta é uma aplicação simples que exibe uma página HTML, configurável via Ku
 
 ## Como executar
 
+- Clone o repositório:
+`git clone git@github.com:VitoriaOrtega/desafio-app.git`
+
 - Construa a imagem Docker da aplicação:
 `docker build -t vitoriaortegaa/desafio-experts:1.0.1 . `
+
+
+- Executar o cluster local:
+`minikube start`
 
 - Instale o Helm chart no cluster Kubernetes:
 `helm install desafio-app ./chart/desafio-app`
