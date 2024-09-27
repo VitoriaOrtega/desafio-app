@@ -2,22 +2,6 @@
 
 Esta é uma aplicação simples que exibe uma página HTML, configurável via Kubernetes. A página é configurada por meio de um ConfigMap e a aplicação é empacotada usando Helm, o que facilita sua instalação no Kubernetes. A imagem Docker da aplicação usa o Nginx como servidor web
 
-## Estrutura do chart
-
-desafio-app/
-├── chart/
-│   └── desafio-app/
-│       ├── templates/
-│       │   ├── _helpers.tpl
-│       │   ├── configmap.yaml
-│       │   ├── deployment.yaml
-│       │   ├── ingress.yaml
-│       │   ├── service.yaml
-│       ├── Chart.yaml
-│       ├── docker-compose.yaml
-│       ├── Dockerfile
-│       ├── values.yaml
-└── README.md
 
 ## Descrição dos Arquivos
 - configmap.yaml: Define o conteúdo da página HTML
