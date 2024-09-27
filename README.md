@@ -26,7 +26,6 @@ Esta é uma aplicação simples que exibe uma página HTML, configurável via Ku
 - Construa a imagem Docker da aplicação:
 `docker build -t vitoriaortegaa/desafio-experts:1.0.1 . `
 
-
 - Executar o cluster local:
 `minikube start`
 
@@ -36,8 +35,7 @@ Esta é uma aplicação simples que exibe uma página HTML, configurável via Ku
 - Confira se os pods foram criados corretamente:
 `kubectl get pods`
 
+> Observação: Caso não tenha um cluster local, basta rodar o comando `docker-compose up ` no path `cd desafio-app/chart/desafio-app` que ele irá expor a porta 8081 localmente.
+
 ### Para acessar a Aplicação:
 Acesse a aplicação pelo Ingress. No arquivo `values.yaml`, o host configurado é `application-vitoria.local`. Certifique-se de que seu DNS ou /etc/hosts aponta para o IP correto
-
-### Testar a aplicação localmente usando Docker Compose:
-`docker-compose up`
